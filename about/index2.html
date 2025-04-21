@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Packet Sniffer Presentation</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Network Packet Sniffer and  How it Works</h1>
+        </header>
+<div class="slide2"><img id="page1" src="https://th.bing.com/th/id/OIP.Ol-yNPJzAYh7Kyh-XubwxgHaE8?w=301&h=201&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+<img id="page2" src="https://th.bing.com/th/id/OIP.fOpnmn0Aw4D4omSSEjTHKgHaGE?w=245&h=201&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+<img id="page3" src="https://th.bing.com/th/id/OIP.H_YL6q_hkEUV5hPs6P7hngHaFG?w=358&h=201&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+
+<div class="nav">
+    <a href="#page1"></a>
+    <a href="#page2"></a>
+    <a href="#page3"></a>
+</div></div>
+        <section class="intro">
+            <h2>What is Network Packet Sniffing?</h2>
+            <p>Network packet sniffing refers to the process of capturing data packets that flow through a network. This is useful for analyzing network traffic and troubleshooting network issues.</p>
+        </section>
+
+        <section class="steps">
+            <h2>Steps for Packet Sniffing</h2>
+            <ul>
+                <li>1. Install necessary tools like <strong>scapy</strong> in Python.</li>
+                <li>2. Write a Python script to capture network packets.</li>
+                <li>3. Analyze the captured packets for useful information.</li>
+            </ul>
+        </section>
+
+        <section class="code">
+            <h2>Packet Sniffing Code</h2>
+            <pre><code>
+from scapy.all import *
+
+# Define the packet handler function
+def packet_callback(packet):
+    print(packet.show())
+
+# Start sniffing
+sniff(prn=packet_callback, store=0)
+            </code></pre>
+        </section>
+
+        <section class="demo">
+            <h2>Demo and Explanation</h2>
+            <p>In the above code, we use <strong>Scapy</strong> to capture packets. The <code>sniff()</code> function listens to network traffic and calls the <code>packet_callback()</code> function to display the details of each captured packet.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Network Security Class</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.email input{
+    font-size: 12px;
+    padding: 8px;
+   
+
+ width: 200px;
+ border-radius: 6px;
+}
+.email{
+    padding-top: 100px;
+    padding-left: 55px;
+}
+.password input{
+    font-size: 12px;
+    padding: 8px;
+    width: 200px;
+ border-radius: 6px;
+ padding-top: 10px;
+}
+.login button{
+    font-size: 12px;
+    width: 220px;
+    height: 30px;
+    
+}
+.login{
+    
+    color: rgb(224, 224, 224);
+    font-size: x-large;
+}
+
+.password{
+    padding-top: 10px;
+    padding-left: 55px;
+}
+
+.facebook{
+    padding-left: 500px;
+   
+}
+.vipin{
+    background: rgba(244, 243, 243, 0.639);
+      height: 450px;
+    width:  350px;
+    border-radius: 25px;
+  
+ margin-left: 450px;
+ margin-bottom: 190px;
+    
+ 
+}
+span{
+    padding-left: 20px;
+
+}
+
+.pk{
+    padding-top: 90px;
+    padding-left: 55px; 
+}
+.pk input{
+    font-size: 12px;
+    padding: 8px;
+    width: 200px;
+ border-radius: 6px;
+ padding-top: 10px;
+}
+
+.enter{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+}
+.enter button{
+    font-size: 12px;
+    width: 210px;
+    height: 30px;
+    border-radius: 20px solid black;
+}
+body{
+    background: url(https://i.pinimg.com/736x/ac/eb/f1/acebf1aa923ab1236c8e9fa7d0700e48.jpg);
+}

@@ -1,0 +1,148 @@
+.start{
+background: black;
+color: aliceblue;
+ justify-content: end;
+    
+display: flex;
+height: 90px;
+
+
+}
+.no{
+    padding-right: 20px;
+ padding-top: 30px;
+font-size: x-large;
+    
+}
+
+.cheats{
+    background: rgba(142, 221, 243, 0.879);
+height: 700px;
+  
+    padding-top: 100px;
+  
+}
+.small{
+    text-align: center; 
+    font-size: xx-large;
+}
+.ran{
+    padding-left: 550px;
+    padding-top: 150px;
+}
+.ran button{
+    font-size: x-large;
+    width: 220px;
+    height: 50px;
+  
+ justify-content: center;
+ background: aqua;
+border-radius: 14px;
+box-shadow: 1px 2px 30px 2px rgb(5, 6, 6);
+}
+.cheat{
+    padding-top: 50px;
+      text-align: center; 
+       font-size: x-large;
+       padding-bottom: 30px;
+}
+.non{
+    text-align: center;
+    font-size: larger;
+    padding-top: 100px;
+    padding-bottom: 30px;
+
+}
+.box{
+    width: 28%;
+     height: 400px;
+text-align: center;
+   margin: 2%;
+   background-color: #f9f9f9;
+   font-size: x-large;
+   padding-top: 20px;
+
+}
+.nam{
+    display: flex;
+   flex-wrap: wrap;
+     padding-bottom: 100px;
+}
+.memory{
+    padding-top: 20px;
+    font-size: xx-large;
+    padding-bottom:40px ;
+}
+.box{
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 px 12px rgba(0, 0, 0, 0.1);
+}
+.box:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.lin{
+    margin-right: 75px;
+    font-size: xx-large;
+}
+.feature{
+    padding: 20px;
+    
+}
+
+.lin button{
+ font-size: 16px;
+ width: 200px;
+ height: 40px;
+ border-radius: 200px ;
+ margin-top: 10px;
+ box-shadow: 1px 2px 30px 2px black;
+}
+.nal{
+    padding: 50px;
+    padding-top: 10px;
+}
+.area{
+    padding: 18px;
+}
+.lin room{
+    padding-top: 150px;
+    justify-content: center;
+ 
+}
+
+.richa{
+  
+height: 500px;
+    width: 100%;
+    background: rgb(38, 38, 38);
+    color: #f9f9f9;
+   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+ display: flex;
+ justify-content: center;
+}
+.eat{
+ padding-left: 50px;
+ padding-top: 60px;
+ color: #2689ec;
+
+font-size: 45px;
+margin: 60px;
+}
+.writ{
+    padding-left: 80px;
+    font-size: 20px;
+
+    padding-bottom: 60px;
+}
+.same{
+    color: #f9f9f9;
+}
+.nole{
+    background: rgba(142, 221, 243, 0.879);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    clip-path: polygon(0% 0%, 2500% 400%, 100% 100%, 0% 900%);
+}

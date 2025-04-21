@@ -1,0 +1,81 @@
+.email input{
+    font-size: 12px;
+    padding: 8px;
+   
+
+ width: 200px;
+ border-radius: 6px;
+}
+.email{
+    padding-top: 40px;
+    padding-left: 55px;
+}
+.password input{
+    font-size: 12px;
+    padding: 8px;
+    width: 200px;
+ border-radius: 6px;
+ padding-top: 10px;
+}
+.login button{
+    font-size: 12px;
+    width: 220px;
+    height: 30px;
+    
+}
+.login{
+    
+    color: rgb(197, 203, 203);
+    font-size: x-large;
+}
+
+.password{
+    padding-top: 10px;
+    padding-left: 55px;
+}
+
+.facebook{
+    padding-left: 750px;
+}
+.vipin{
+    background: rgba(225, 222, 222, 0.858);
+      height: 450px;
+    width:  350px;
+    border-radius: 25px;
+  
+ margin-left: 450px;
+ margin-bottom: 190px;
+    
+ 
+}
+span{
+    padding-left: 20px;
+
+}
+
+.pk{
+    padding-top: 90px;
+    padding-left: 55px; 
+}
+.pk input{
+    font-size: 12px;
+    padding: 8px;
+    width: 200px;
+ border-radius: 6px;
+ padding-top: 10px;
+}
+
+.enter{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+}
+.enter button{
+    font-size: 12px;
+    width: 210px;
+    height: 30px;
+    border-radius: 20px solid black;
+}
+body{
+    background: url(https://th.bing.com/th/id/R.f3fa5f0f0729fecd98af6182b24963d3?rik=6sDP%2fzCNMXVsZQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fe%2f9%2f8%2f1253939-download-computer-programming-wallpaper-1242x2208.jpg&ehk=IyGXkJcLfqguUBEe1Qxl2MUsVj179k2KVEQARENnSzs%3d&risl=&pid=ImgRaw&r=0);
+}

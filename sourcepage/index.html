@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+    <DIV class="facebook"><h1>Find your trafficless path</h1></DIV>
+       
+             
+    <div class="vipin">
+       
+        <div class="pk" ><input id="ip" type="number" placeholder="enter your ip address"></div>
+    <div class="email"><input id="source"  type="number" placeholder="enter your source address"></div>
+    <div class="password"><input id="destination"  type="number" placeholder="enter your destination address"></div>
+    <div  class="enter" ><button onclick="vipin()">ENTER</button></div>
+
+   
+        
+    <span >forgotten account ?  -</span>
+    <span>loign up for booking</span>
+</div>
+<script>
+    function vipin(){
+     const ip = document.getElementById("ip").value;
+     const source = document.getElementById("source").value;
+     const destination = document.getElementById("destination").value;
+       
+    
+     if (!ip || !source || !destination) {
+                alert("Please fill in all fields!");
+            } 
+
+else{
+    window.location.href="file:///C:/Users/vipin/OneDrive/Desktop/project2/shortcut/indedx.html"
+}
+    }
+</script>
+</body>
+</html>

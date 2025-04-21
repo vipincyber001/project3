@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Router Shortest Path Simulation</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .router { display: inline-block; margin: 5px; padding: 10px; background: #eee; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+  <h2>Router Shortest Path Finder</h2>
+  <div id="routerCosts"></div>
+  <br>
+  <div id="output" style="margin-top: 20px;"></div>
+
+  <script>
+    const routerCount = 13;
+    const graph = Array.from({ length: routerCount }, () => Array(routerCount).fill(Infinity));
+
+    // Create a readable graph structure with random costs
+    for (let i = 0; i < routerCount; i++) {
+      for (let j = i + 1; j <= i + 2 && j < routerCount; j++) {
+        const cost = Math.floor(Math.random() * 99) + 1; // random cost between 1–99
+        graph[i][j] = cost;
+        graph[j][i] = cost; // bidirectional link
+      }
+    }
+
+   
+   
+
+   
+
+    // Dijkstra's Algorithm
+    function dijkstra(graph, start) {
+      const numNodes = graph.length;
+      const distances = Array(numNodes).fill(Infinity);
+      const visited = Array(numNodes).fill(false);
+      const previous = Array(numNodes).fill(null);
+
+      distances[start] = 0;
+
+      for (let i = 0; i < numNodes; i++) {
+        let minDist = Infinity;
+        let currentNode = -1;
+
+        for (let j = 0; j < numNodes; j++) {
+          if (!visited[j] && distances[j] < minDist) {
+            minDist = distances[j];
+            currentNode = j;
+          }
+        }
+
+        if (currentNode === -1) break;
+
+        visited[currentNode] = true;
+
+        for (let neighbor = 0; neighbor < numNodes; neighbor++) {
+          const cost = graph[currentNode][neighbor];
+          if (cost !== Infinity && distances[currentNode] + cost < distances[neighbor]) {
+            distances[neighbor] = distances[currentNode] + cost;
+            previous[neighbor] = currentNode;
+          }
+        }
+      }
+
+      return { distances, previous };
+    }
+
+    function getPath(previous, start, end) {
+      const path = [];
+      let current = end;
+      while (current !== null) {
+        path.unshift(current);
+        current = previous[current];
+      }
+      return path;
+    }
+
+    // Get user input
+    const a = parseInt(prompt("Enter source router (1-13):")) - 1;
+    const b = parseInt(prompt("Enter destination router (1-13):")) - 1;
+
+    const output = document.getElementById("output");
+
+    if (isNaN(a) || isNaN(b) || a < 0 || b < 0 || a >= routerCount || b >= routerCount || a === b) {
+      output.innerHTML = `<span style="color:red;">Invalid input. Please enter router numbers between 1 and 13 and make sure they are not the same.</span>`;
+    } else {
+      const { distances, previous } = dijkstra(graph, a);
+      const path = getPath(previous, a, b);
+
+      if (distances[b] === Infinity) {
+        output.innerHTML = `No path found from Router ${a + 1} to Router ${b + 1}`;
+      } else {
+        output.innerHTML = `
+          <strong>Shortest Path from Router ${a + 1} to Router ${b + 1}:</strong><br>
+          ${path.map(p => `Router ${p + 1}`).join(" → ")}<br>
+          <strong>Total Cost:</strong> ${distances[b]}
+        `;
+      }
+    }
+  </script>
+</body>
+</html>

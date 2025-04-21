@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="vipin1"></div>
+    <div id="vipin2"></div>
+    <div id="vipin3"></div>
+    <div id="vipin4"></div>
+    <div id="vipin5"></div>
+    <div id="vipin6"></div>
+    <div id="vipin7"></div>
+    <div id="vipin8"></div>
+    <div id="vipin9"></div>
+    <div id="vipin10"></div>
+    <div id="vipin11"></div>
+    <div id="vipin12"></div>
+    <div id="vipin13"></div>
+   
+   <script>
+    
+
+
+ 
+   let rim1 =10;
+   let rim2= 0;
+   let rim3= 0;
+   let rim4 = 0;
+   let rim5 = 0;
+   let rim6 = 0;
+   let rim7 =0;
+   let rim8 =0; 
+   let rim9 = 0;
+   let rim10= 0;
+   let rim11 = 0;
+   let rim12 = 0;
+   let rim13 = 0;
+   
+   
+  
+
+
+
+
+
+
+
+         setInterval(() => {
+           rim1 = Math.floor(Math.random()*100);
+            document.getElementById("vipin1").textContent =rim1;
+    document.writeln("router1" + " " + rim1);
+         
+ },200); 
+      function vipin1() {
+  setInterval(() => {
+            rim2 = Math.floor(Math.random()*100);
+
+         document.getElementById("vipin2").textContent =  rim2;
+       
+        },200); 
+      
+       setInterval(() => {
+            rim3 = Math.floor(Math.random()*100);
+          document.getElementById("vipin3").textContent =   rim3;
+        
+        },200);
+}      
+  vipin1(); 
+      setTimeout(() => {
+
+         if (rim2<rim3) {
+         document.writeln("router2" + " "+rim2);
+       
+       
+         function vipin2() {
+  setInterval(() => {
+            rim4 = Math.floor(Math.random()*100);
+         document.getElementById("vipin4").textContent =rim4;
+        },200); 
+      
+       setInterval(() => {
+            rim5 = Math.floor(Math.random()*100);
+          document.getElementById("vipin5").textContent =rim5;
+        },200);
+  }
+ vipin2(); 
+      setTimeout(() => {
+     if (rim4<rim5) {
+         document.writeln("router4" + " "+rim4);
+
+function vipin3() {
+  setInterval(() => {
+            rim6 = Math.floor(Math.random()*100);
+         document.getElementById("vipin6").textContent =rim6;
+        },200); 
+      setInterval(() => {
+            rim7 = Math.floor(Math.random()*100);
+          document.getElementById("vipin7").textContent =rim7;
+        },200);
+  
+}
+      vipin3(); 
+      setTimeout(() => {
+      if (rim6<rim7) {
+         document.writeln("router6"+" "+rim6);}
+ else {
+            document.writeln("router7"+ " " +rim7);
+            function vipin4() {
+  setInterval(() => {
+            rim8 = Math.floor(Math.random()*100);
+         document.getElementById("vipin8").textContent =rim8;
+        },200); 
+      
+       setInterval(() => {
+            rim9 = Math.floor(Math.random()*100);
+          document.getElementById("vipin9").textContent =rim9;
+        },200);
+  
+}
+           
+      vipin4(); 
+      setTimeout(() => {
+        if (rim8<rim9) {
+          document.writeln("router 8" +" "+rim8);
+          
+        } else if(rim9<rim1) {
+          document.writeln("router 9" +" "+rim9);
+          
+        }
+        else{
+          document.writeln("router 1" +" "+rim1);
+
+        }
+      }, 200);
+ }
+      },300);   
+     } else {
+            document.writeln("router5"+" " +rim5);
+            function vipin5() {
+  setInterval(() => {
+            rim10 = Math.floor(Math.random()*100);
+         document.getElementById("vipin10").textContent =rim10;
+        },200); 
+      
+       setInterval(() => {
+            rim11 = Math.floor(Math.random()*100);
+          document.getElementById("vipin11").textContent =rim11;
+        },200);
+  
+}
+           
+      vipin5(); 
+      setTimeout(() => {
+        if (rim10<rim11) {
+          document.writeln("router10" +" "+rim10);
+ } 
+        else if(rim11<rim7){
+          document.writeln("router11" +" "+rim11);
+}
+        else  {
+          document.writeln("router7" +" "+rim7);
+ }
+      }, 200);
+}
+      },300);   
+ } else {
+            document.writeln("router3" +" "+rim3);
+          function vipin6() {
+  setInterval(() => {
+            rim12 = Math.floor(Math.random()*100);
+         document.getElementById("vipin12").textContent =rim12;
+        },200); 
+      
+       setInterval(() => {
+            rim13 = Math.floor(Math.random()*100);
+          document.getElementById("vipin13").textContent =rim13;
+        },200);
+  
+}
+      vipin6(); 
+      setTimeout(() => {
+        if (rim12<rim13) {
+          document.writeln("router12"+" " +rim12);
+          
+        } else if(rim13<rim11) {
+          document.writeln("router13" +" "+rim13);
+          
+        }
+        else {
+          document.writeln("router11" +" "+rim11);
+}
+      }, 200);
+          }
+      },300); 
+      const a = parseInt(prompt("Enter source router (1-13):")) - 1;
+    const b = parseInt(prompt("Enter destination router (1-13):")) - 1;
+
+ </script>
+</body>
+</html>
